@@ -1,0 +1,19 @@
+:root {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  margin: 0 0 18px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details {
+  padding: 8px 2px 16px;
+}
+

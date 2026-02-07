@@ -1,0 +1,21 @@
+export default function GuestList({ guests, onSelect }) {
+  return (
+    <div>
+      {guests.map((guest) => (
+        <div
+          key={guest.id}
+          onClick={() => onSelect(guest.id)}
+          style={{
+            border: "1px solid gray",
+            padding: "10px",
+            margin: "6px 0",
+            cursor: "pointer",
+          }}
+        >
+          <p style={{ margin: 0, fontWeight: "bold" }}>{guest.name}</p>
+          <p style={{ margin: 0 }}>{guest.email}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
